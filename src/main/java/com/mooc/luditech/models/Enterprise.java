@@ -1,7 +1,14 @@
 package com.mooc.luditech.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Table(name="enterprise")
+@Entity
 public class Enterprise {
 
+	@Id
 	private int id;
 	private String name;
 	private String city;
