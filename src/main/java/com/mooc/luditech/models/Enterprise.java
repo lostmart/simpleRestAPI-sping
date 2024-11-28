@@ -1,6 +1,8 @@
 package com.mooc.luditech.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -9,7 +11,9 @@ import jakarta.persistence.Table;
 public class Enterprise {
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
+	
 	private String name;
 	private String city;
 
